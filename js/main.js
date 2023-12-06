@@ -56,7 +56,7 @@ document.getElementById('current-year').innerText = currentYear;
     listItem.textContent = i % 2 === 0 ? 'even' : 'odd';
     
     // Change color based on even or odd
-    listItem.style.color = i % 2 === 0 ? 'red' : 'green';
+    listItem.style.color = i % 2 === 0 ? 'magenta' : 'purple';
  
     numbersList.appendChild(listItem);
   }
