@@ -6,6 +6,10 @@
   <title>Jashan Resume</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
   <link href="styles/base.css" rel="stylesheet">
+
+
+  <script defer src="js/main.js"></script>
+  <!-- Link to the java script -->
 </head>
 <body>
 
@@ -22,32 +26,43 @@
   </header>
 
   <main>
-    <center>
+    <ol>
+    <section id="buttons">
+    </ol>
+
+
+      <nav>
+        <ul>
+             <li> <button id="btn-alert" class="common-btn"> OK </button> </li>
+             </li><button id="btn-hover" class="common-btn"> Click here to login </button> </li>
+             </li><button id="btn-counter" class="common-btn"> Increment Counter </button></li>
+             </li><p id="txt-counter" class="common-btn"> Number: 1</p></li>
+        </ul>
+        </nav>
+    </section>
+
+
     <section id="Myself">
-      <h2>Myself</h2>
+      <h1>Myself</h1>
       <p>My name is Jashan, and I am from Punjab.</p>
-    </center>
-      <figure><center>
+      <figure>
         <img src="jashan1.jpg" width="350" height="200" alt="MyImage">
-        <figcaption>My Image</figcaption></center>
+        <figcaption>My Image</figcaption>
       </figure>
     </section>
 
-    <center>
     <section id="Hobby">
-      <h3>Hobbies</h3>
+      <h1>Hobbies</h1>
       <ol>
         <li>Reading</li>
         <li>Travel</li>
         <li>Gym</li>
         <li>Cricket</li>
       </ol>
-      <p>I am a sports enthusiast and play various sports.</p>
-    </center>
+
       <figure>
-        <center>
         <img src="jashan2.jpg" width="300" height="200" alt="Likes">
-        <figcaption>My First Image in Calgary   </center></figcaption>
+        <figcaption>My First Image in Calgary</figcaption>
       </figure>
     </section>
 
@@ -66,22 +81,27 @@
           <td>12th</td>
           <td>64%</td>
         </tr>
-        
       </table>
     </section>
-  </main>
-  <center>
-    <section id="Contact">
-      <h2>Contact</h2>
+
+    <section id="contact">
+      <h3>Contact</h3>
       <p>Jashan@gmail.com</p>
-    </center>
-  <section id="contact">
-    <h2>Contact Information</h2>
-    <p>Follow me on <a href="https://github.com/jashansidhu0073" target="_blank">GitHub</a>.</p>
-  </section>
+      <p>Follow me on <a href="https://github.com/jashansidhu0073" target="_blank">GitHub</a>.</p>
+    </section>
+         
+                    <ol>
+ 
+                      <ol id="numbers">
+                        
+                    </ol>
+       </section>
+
+  </main>
 
   <footer>
-    <p>&copy; 2023 Jashan. All rights reserved.</p>
+    <p>&copy; <span id="current-year"></span> Jashan. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
