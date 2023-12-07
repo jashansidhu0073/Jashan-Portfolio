@@ -35,15 +35,15 @@ document.getElementById('current-year').innerText = currentYear;
  
    document.getElementById('btn-counter').addEventListener('click', function () {
      count++;
-     document.getElementById('txt-counter').innerText = `Number: ${count}`;
+     document.getElementById('btn-counter').innerText = `Number: ${count}`;
  
      // Check if the number is even or odd
      if (count % 2 === 0) {
-       document.getElementById('txt-counter').classList.remove('odd');
-       document.getElementById('txt-counter').classList.add('even');
+       document.getElementById('btn-counter').classList.remove('odd');
+       document.getElementById('btn-counter').classList.add('even');
      } else {
-       document.getElementById('txt-counter').classList.remove('even');
-       document.getElementById('txt-counter').classList.add('odd');
+       document.getElementById('btn-counter').classList.remove('even');
+       document.getElementById('btn-counter').classList.add('odd');
      }
    });
  
