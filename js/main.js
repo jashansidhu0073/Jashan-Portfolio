@@ -1,62 +1,50 @@
-/*
-//
-//
-//
-//
-*/
-console.log('Hello, World!'); // just saying hello
- 
-/* alert ('Hello, World!'); // just saying hello */
- 
-// Footer - Display current year
-const currentYear = new Date().getFullYear();
-document.getElementById('current-year').innerText = currentYear;
- 
- 
+document.addEventListener('DOMContentLoaded', function () {
+  // Get the current year and update the footer
+  const currentYear = new Date().getFullYear();
+  document.getElementById('current-year').textContent = currentYear;
+
   // Alert Button
-  document.getElementById('btn-alert').addEventListener('click', function () {
-    alert('Hello world!');
+  const alertButton = document.getElementById('btn-alert');
+  alertButton.addEventListener('click', function () {
+    alert('Hello everyone!');
   });
- 
+
   // Hover Button
   const hoverButton = document.getElementById('btn-hover');
- 
   hoverButton.addEventListener('mouseover', function () {
-    hoverButton.innerText = 'Welcome';
+    hoverButton.innerText = 'Welcome!';
   });
- 
-  hoverButton.addEventListener('mouseleave', function () {
-    hoverButton.innerText = 'Click here to login';
+
+  hoverButton.addEventListener('mouseout', function () {
+    hoverButton.innerText = 'login now';
   });
- 
- 
-   // Incrementing Button
-   let count = 1;
- 
-   document.getElementById('btn-counter').addEventListener('click', function () {
-     count++;
-     document.getElementById('btn-counter').innerText = `Number: ${count}`;
- 
-     // Check if the number is even or odd
-     if (count % 2 === 0) {
-       document.getElementById('btn-counter').classList.remove('odd');
-       document.getElementById('btn-counter').classList.add('even');
-     } else {
-       document.getElementById('btn-counter').classList.remove('even');
-       document.getElementById('btn-counter').classList.add('odd');
-     }
-   });
- 
-   
+
+  // Incrementing Button
+  let count = 1;
+  const counterButton = document.getElementById('btn-counter');
+  const counterText = document.getElementById('txt-counter'); // Added this line
+
+  counterButton.addEventListener('click', function () { // Changed 'enter' to 'click'
+    count++;
+    counterText.innerHTML = `Number: ${count}`;
+
+    // Change text color based on even or odd
+    if (count % 2 === 0) {
+      counterText.classList.remove('odd');
+      counterText.classList.add('even');
+    } else {
+      counterText.classList.remove('even');
+      counterText.classList.add('odd');
+    }
+  });
+
   // For Loops
   const numbersList = document.getElementById('numbers');
- 
   for (let i = 1; i <= 100; i++) {
     const listItem = document.createElement('li');
     listItem.textContent = i % 2 === 0 ? 'even' : 'odd';
-    
-    // Change color based on even or odd
-    listItem.style.color = i % 2 === 0 ? 'magenta' : 'purple';
- 
     numbersList.appendChild(listItem);
   }
+
+});
+
