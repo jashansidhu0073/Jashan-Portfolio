@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // For Loops
+  // For Loop
   const numbersList = document.getElementById('numbers');
   for (let i = 1; i <= 100; i++) {
     const listItem = document.createElement('li');
