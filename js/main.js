@@ -21,9 +21,9 @@ document.addEventListener('DOMContentLoaded', function () {
   // Incrementing Button
   let count = 1;
   const counterButton = document.getElementById('btn-counter');
-  const counterText = document.getElementById('txt-counter'); // Added this line
+  const counterText = document.getElementById('txt-counter');
 
-  counterButton.addEventListener('click', function () { // Changed 'enter' to 'click'
+  counterButton.addEventListener('click', function () {
     count++;
     counterText.innerHTML = `Number: ${count}`;
 
